@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mendr — Social media, rebuilt</title>
+
+<style>
+:root{
+  --bg:#000;
+  --text:#fff;
+  --muted:#9aa0a6;
+  --accent:#00e6ff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+  background:#000;
+  color:#fff;
+}
+
+/* CONTAINER */
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:30px;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  font-weight:600;
+  font-size:20px;
+}
+
+.btn{
+  padding:10px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.btn-primary{
+  background:#fff;
+  color:#000;
+}
+
+.btn-ghost{
+  border:1px solid #333;
+  color:#aaa;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 340px;
+  gap:40px;
+  align-items:center;
+  padding:80px 0;
+}
+
+.hero h1{
+  font-size:48px;
+  line-height:1.1;
+}
+
+.sub{
+  color:#aaa;
+  margin-top:15px;
+}
+
+.cta{
+  margin-top:25px;
+  display:flex;
+  gap:12px;
+}
+
+/* DEVICE */
+.device{
+  position:relative;
+  width:320px;
+  height:600px;
+  margin:auto;
+}
+
+.glow{
+  position:absolute;
+  width:400px;
+  height:400px;
+  background:radial-gradient(circle,rgba(0,230,255,0.2),transparent);
+  filter:blur(120px);
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.screen{
+  position:relative;
+  background:#0a0a0a;
+  border-radius:30px;
+  padding:20px;
+  height:100%;
+  border:1px solid #222;
+}
+
+.post{
+  background:#111;
+  padding:12px;
+  border-radius:12px;
+  margin-bottom:12px;
+  font-size:14px;
+}
+
+.actions{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.actions span{
+  background:#1a1a1a;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+/* SECTION */
+.section{
+  margin-top:100px;
+  text-align:center;
+}
+
+.section h2{
+  font-size:28px;
+}
+
+.section p{
+  color:#888;
+  margin-top:10px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:40px;
+}
+
+.card{
+  background:#0f0f0f;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid #222;
+}
+
+/* FOOTER */
+footer{
+  margin-top:100px;
+  text-align:center;
+  color:#555;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<nav>
+  <div class="brand">Mendr</div>
+
+  <div>
+    <a href="https://forms.gle/pmBbfsf64Wt4haQ57" class="btn btn-ghost">Join Beta</a>
+    <a href="https://app.mendr.social" class="btn btn-ghost">Enter App</a>
+  </div>
+</nav>
+
+<section class="hero">
+
+  <div>
+    <h1>
+      Social media,<br>
+      the way it should have been.
+    </h1>
+
+    <p class="sub">
+      Built for thinking. Built for real conversations.  
+      Not endless scrolling.
+    </p>
+
+    <div class="cta">
+      <a href="https://forms.gle/pmBbfsf64Wt4haQ57" class="btn btn-primary">Join Beta</a>
+      <a href="https://app.mendr.social" class="btn btn-ghost">Enter App</a>
+    </div>
+  </div>
+
+  <div class="device">
+    <div class="glow"></div>
+
+    <div class="screen">
+      <div class="post">
+        Do you think social media is making people less thoughtful?
+        <div class="actions">
+          <span>Agree</span>
+          <span>Disagree</span>
+          <span>Neutral</span>
+        </div>
+      </div>
+
+      <div class="post">
+        Best way to stay focused in 2026?
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Social media lost its purpose</h2>
+  <p>
+    It was meant to connect people.  
+    Now it captures attention instead.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Mendr changes the focus</h2>
+  <p>
+    From passive scrolling → to active thinking.  
+    From noise → to real interaction.
+  </p>
+</section>
+
+<section class="features">
+
+  <div class="card">
+    <h3>Polls</h3>
+    <p>Share real opinions instantly.</p>
+  </div>
+
+  <div class="card">
+    <h3>Discussions</h3>
+    <p>Real conversations, not reactions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Rooms</h3>
+    <p>Focused spaces that actually matter.</p>
+  </div>
+
+  <div class="card">
+    <h3>Fair Reach</h3>
+    <p>No algorithm controlling everything.</p>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>This isn’t another social platform</h2>
+  <p>It’s a shift in how people interact online.</p>
+
+  <div style="margin-top:20px;">
+    <a href="https://forms.gle/pmBbfsf64Wt4haQ57" class="btn btn-primary">
+      Be part of the early users
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mendr
+</footer>
+
+</div>
+
+</body>
+</html>
